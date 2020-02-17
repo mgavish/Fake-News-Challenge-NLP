@@ -1,10 +1,10 @@
 # Introduction
 
-This project is based off the first part of the [Fake News Challenge](http://www.fakenewschallenge.org/)(FNC-1) where the goal is "to explore how AI...might be able to combat the fake news problme."  Identifying fake news is complex task that can be broken down into a few steps, with a potential first being the comparison of topics or, more precicely, **stance detection**, accross myriad news organizations.  The goal of this project is to classify the relationship between a body of text with a headline as agree, disagree, discuss or unrelated.   
+This project is based off the first part of the [Fake News Challenge](http://www.fakenewschallenge.org/)(FNC-1) where the goal is "to explore how AI...might be able to combat the fake news problem."  Identifying fake news is complex task that can be broken down into a few steps, with a potential first being the comparison of topics or, more precisely, **stance detection**, across myriad news organizations.  The goal of this project is to classify the relationship between a body of text with a headline as agree, disagree, discuss or unrelated.   
 
 # Modeling
 
-The **preprocessing** work here includes the removal of punctuation, lower casing all text, the removal of stop words (as the gaol is classification), tokenizing and stemming.  
+The **preprocessing** work here includes the removal of punctuation, lower casing all text, the removal of stop words (as the goal is classification), tokenizing and stemming.  
 
 **Feature engineering is inclusive of:**
  - basic n_gram count ratios
@@ -24,5 +24,5 @@ The **preprocessing** work here includes the removal of punctuation, lower casin
 - Gensim
 - Keras
 
-I completed all work on a Google Compute Engine (GCE) VM.  You can get up and running quicly with a jupyter connected VM on GCE following my post on [Medium](https://medium.com/@mngavish/deep-learning-on-google-compute-engine-through-jupyter-interface-15d64e7d7e00)  
-Executing the preprocessing and feature engineering in one sessoin will need ~800GB though, all data will be pickled for later use. I would however advise using numpy's .npz instead as it has quicker read/write times.  
+I completed all work on a Google Compute Engine (GCE) VM.  You can get up and running quickly with a jupyter connected VM on GCE following my post on [Medium](https://medium.com/@mngavish/deep-learning-on-google-compute-engine-through-jupyter-interface-15d64e7d7e00)  
+Executing the preprocessing and feature engineering in one session will need ~800GB though, all data will be pickled for later use. I would however advise using numpy's .npz instead as it has quicker read/write times.  
