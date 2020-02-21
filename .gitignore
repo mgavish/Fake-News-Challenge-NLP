@@ -1,2 +1,5 @@
 GCE_finalizing_helper/
-
+pics/
+FNC_Feature_Engineering-PLAYGROUND.ipynb
+gpu_commands.ipynb
+keras_example_Conv1D_for_text.ipynb

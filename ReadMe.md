@@ -26,3 +26,7 @@ The **preprocessing** work here includes the removal of punctuation, lower casin
 
 I completed all work on a Google Compute Engine (GCE) VM.  You can get up and running quickly with a jupyter connected VM on GCE following my post on [Medium](https://medium.com/@mngavish/deep-learning-on-google-compute-engine-through-jupyter-interface-15d64e7d7e00)  
 Executing the preprocessing and feature engineering in one session will need ~800GB though, all data will be pickled for later use. I would however advise using numpy's .npz instead as it has quicker read/write times.  
+
+
+# Future Work
+ - DL with Conv1D
