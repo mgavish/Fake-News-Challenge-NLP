@@ -1,20 +1,33 @@
 # Introduction
 
-This project is based off the first part of the [Fake News Challenge](http://www.fakenewschallenge.org/)(FNC-1) where the goal is "to explore how AI...might be able to combat the fake news problem."  Identifying fake news is complex task that can be broken down into a few steps, with a potential first being the comparison of topics or, more precisely, **stance detection**, across myriad news organizations.  The goal of this project is to classify the relationship between a body of text with a headline as agree, disagree, discuss or unrelated.   
+This project is based off the first part of the [Fake News Challenge](http://www.fakenewschallenge.org/)(FNC-1) where the goal is "to explore how AI...might be able to combat the fake news problem."  Identifying fake news is a complex task that can be broken down into a few steps, with a potential first being the comparison of topics or, more precisely, **stance detection**, across myriad news organizations.  The goal of this project is to classify the relationship between a body of text with a headline as agree, *disagree, discuss or unrelated*.   
 
-# Modeling
+As we are working with string data, there is a lot of **pre-processing** and **feature engineering** to do. 
 
-The **preprocessing** work here includes the removal of punctuation, lower casing all text, the removal of stop words (as the goal is classification), tokenizing and stemming.  
+# Data Preprocessing 
 
-**Feature engineering is inclusive of:**
+- removing punctuation 
+- lower casing all text
+- removing stop words
+- tokenizing
+- stemming
+- creating n-grams
+
+# Feature Engineering
+
  - basic n_gram count ratios
- - TF-IDF 
+ - TF-IDF vectorization 
  - SVD
  - word embeddings with Word2Vec using the [Google News Corpus pre-trained weights](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
  - sentiment features to assign polarity, using [nltk Sentiment Analyzer](https://www.nltk.org/_modules/nltk/sentiment/vader.html) with [VaderSentiment](https://github.com/mgavish/vaderSentiment) 
  
- 
-**Classification** is completed with XGBoost (Gradient Boosting) and a CNN.
+# Modeling
+
+Completed models include:
+
+- Adaboost
+- Gradient Boosing
+- LSTM Deep Learning
 
 # Dependancies
 
@@ -29,4 +42,13 @@ Executing the preprocessing and feature engineering in one session will need ~80
 
 
 # Future Work
- - DL with Conv1D
+
+- Improve model performance
+    - Different preprocessing
+    - Model parameters
+    - Explore Feature importance - which help most and why?
+- Model visualizations
+- Build Convolutional Neural Network
+- Begin real world application 
+    - Scrape news sites, archive data
+    - Build a working record of sources and reliability
